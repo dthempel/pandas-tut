@@ -1,14 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import pandas as pd
-import numpy as np
 
-#ipython.sendFileContentsToIPython
+# read an Excel spreadsheet
+"""
+tracks = pd.read_excel('Tracks.xlsx', sheet_name=0)
 
-#read an excel spreadsheet
+print(tracks)
+print(tracks.columns)
+print(tracks['Milliseconds'])
+"""
 
-tracks = pd.read_excel('.\\pandas\\Tracks.xlsx', sheet_name=0)
-# print(tracks)
-# print(tracks.columns)
-# print(tracks['Milliseconds'])
-
-flights = pd.read_csv('.\\pandas\\flights.csv', index_col=False)
+# read a CSV file
+flights = pd.read_csv('flights.csv', index_col=False)
 print(flights)
+
